@@ -1,0 +1,62 @@
+<div class="ocean">
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
+<div id="weatherDetails" class="mx-auto">
+  <div class="weatherDetailBox">
+    <i class="wi wi-strong-wind"></i>
+    <div>
+      <div class="boxTitle">
+        <p>wind</p>
+      </div>
+      <div class='value'>
+        <p>{{ wind }}
+          <span class="super" *ngIf="locationInfo.location">km/h</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="weatherDetailBox">
+    <i class="wi wi-thermometer"></i>
+    <div>
+      <div class="boxTitle">
+        <p>real feel</p>
+      </div>
+      <div class='value'>
+        <p>{{ feelslike }}
+          <span class="super" *ngIf="locationInfo.location">°C</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="weatherDetailBox">
+    <i class="wi wi-humidity"></i>
+    <div>
+      <div class="boxTitle">
+        <p>barometer</p>
+      </div>
+      <div class='value'>
+        <p>{{ pressure }}
+          <span class="super" *ngIf="locationInfo.location">mbar</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="weatherDetailBox">
+    <i class="wi wi-sprinkle"></i>
+    <div>
+      <div class="boxTitle">
+        <p>rain</p>
+      </div>
+      <div class='value'>
+        <p>{{ rain }}
+          <span class="super" *ngIf="locationInfo.location">mm</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

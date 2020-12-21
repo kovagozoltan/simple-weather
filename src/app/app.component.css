@@ -1,0 +1,61 @@
+
+app-search {
+  /* background-image: url('../assets/img/background.jpg'); */
+  background-image: url("data:image/svg+xml, %3Csvg%20enable-background%3D%22new%200%200%20595.3%20841.9%22%20version%3D%221.1%22%20viewBox%3D%220%200%20595.3%20841.9%22%20xml%3Aspace%3D%22preserve%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bdisplay%3Anone%3B%7D%0A%09.st1%7Bopacity%3A0.4%3Bfill%3A%23ED2024%3B%7D%0A%09.st2%7Bopacity%3A0.8%3Bfill%3Aurl(%23c)%3B%7D%0A%09.st3%7Bopacity%3A0.8%3Bfill%3Aurl(%23b)%3B%7D%0A%09.st4%7Bopacity%3A0.8%3Bfill%3Aurl(%23a)%3B%7D%0A%3C%2Fstyle%3E%0A%3Cg%20class%3D%22st0%22%3E%0A%09%3Crect%20class%3D%22st1%22%20width%3D%22592.5%22%20height%3D%22838.6%22%2F%3E%0A%3C%2Fg%3E%0A%0A%09%3ClinearGradient%20id%3D%22c%22%20x1%3D%22297.64%22%20x2%3D%22297.64%22%20y1%3D%22413.61%22%20y2%3D%22841.89%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%09%09%3Cstop%20stop-color%3D%22%23ED1C24%22%20stop-opacity%3D%22.1%22%20offset%3D%220%22%2F%3E%0A%09%09%3Cstop%20stop-color%3D%22%23ED1C24%22%20stop-opacity%3D%22.3%22%20offset%3D%22.4078%22%2F%3E%0A%09%3C%2FlinearGradient%3E%0A%09%3Cpath%20class%3D%22st2%22%20d%3D%22M595.3%2C489.5c0%2C0-50.5-71.3-129.5-75.8c-79-4.4-141.5%2C80.2-244.9%2C64.7S95.2%2C422.1%2C0%2C438.7v403.2h595.3V489.5z%22%2F%3E%0A%09%3ClinearGradient%20id%3D%22b%22%20x1%3D%22297.64%22%20x2%3D%22297.64%22%20y1%3D%22554.79%22%20y2%3D%22841.89%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%09%09%3Cstop%20stop-color%3D%22%23ED1C24%22%20stop-opacity%3D%22.2%22%20offset%3D%220%22%2F%3E%0A%09%09%3Cstop%20stop-color%3D%22%23ED1C24%22%20stop-opacity%3D%22.3%22%20offset%3D%22.2514%22%2F%3E%0A%09%3C%2FlinearGradient%3E%0A%09%3Cpath%20class%3D%22st3%22%20d%3D%22M0%2C634c0%2C0%2C130.4-98.2%2C256.9-75.9c126.6%2C22.4%2C109.6%2C86.6%2C338.3%2C97.3v186.5H0V634z%22%2F%3E%0A%09%0A%09%09%3ClinearGradient%20id%3D%22a%22%20x1%3D%22297.64%22%20x2%3D%22297.64%22%20y1%3D%22300.82%22%20y2%3D%22841.89%22%20gradientTransform%3D%22matrix(-1%200%200%201%20595.28%200)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%0A%09%09%3Cstop%20stop-color%3D%22%23ED1C24%22%20stop-opacity%3D%22.4%22%20offset%3D%220%22%2F%3E%0A%09%09%3Cstop%20stop-color%3D%22%23ED1C24%22%20stop-opacity%3D%22.5%22%20offset%3D%22.3743%22%2F%3E%0A%09%3C%2FlinearGradient%3E%0A%09%3Cpath%20class%3D%22st4%22%20d%3D%22m0%20385.6s139.6-99.2%20245.3-83%20168.8%2094.7%20350%2093.6v445.7h-595.3v-456.3z%22%2F%3E%0A%0A%3C%2Fsvg%3E");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  /* background-color: #cce4f0; */
+  background-color: rgb(249, 172, 176);
+  display: block;
+  height: 70%;
+}
+app-weather {
+  height: 30%;
+  background-color: white;
+  display: block;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.99px) {
+  #main {
+    width: 100%;
+    height: 100%;
+  }
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.989px) {
+  #main {
+    width: 100%;
+    height: 100%;
+  }
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.99px) {
+  #main {
+    width: 100%;
+    height: 100%;
+  }
+  app-weather {
+    display: flex;
+    justify-content: center;
+  }
+ }
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  #main {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/* Extra large devices (large desktops)*/
+@media (min-width: 1200px) {
+  #main {
+    width: 50%;
+    height: 100%;
+  }
+}

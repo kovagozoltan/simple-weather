@@ -1,0 +1,175 @@
+.ocean {
+  height: 35%;
+  width:100%;
+  top: -35%;
+  bottom:0;
+  left:0;
+  position:relative;
+  overflow: hidden;
+  float:left;
+}
+
+.wave {
+  background: url('../../assets/img/wave2.svg') repeat-x;
+  fill: black;
+  position: absolute;
+  top: -80px;
+  width: 6400px;
+  height: 200px;
+  animation: wave 17s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -80px;
+  animation: wave 17s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 17s ease -1.25s infinite;
+  opacity: 1;
+}
+.wave:nth-of-type(3) {
+  top: -80px;
+  animation: wave 13s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -1.225s infinite, swell 13s ease -2.25s infinite;
+  opacity: 1;
+}
+.wave:nth-of-type(4) {
+  top: -80px;
+  animation: wave 9s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -2s infinite, swell 9s ease -3.25s infinite;
+  opacity: 1;
+}
+.wave:nth-of-type(4) {
+  top: -80px;
+  animation: wave 10s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -1s infinite, swell 10s ease -3.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
+div#weatherDetails {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+}
+
+div.weatherDetailBox{
+  width: 50%;
+  height: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1em;
+}
+
+i {
+  font-size: 3em;
+  min-width: 75px;
+}
+
+div.weatherDetailBox > div {
+  height: -webkit-fill-available;
+}
+
+div.weatherDetailBox .boxTitle{
+  padding-top: 1em;
+  padding-left: 1em;
+  font-size: 1.3em;
+  min-width: 110px;
+  text-align: right;
+}
+
+div.weatherDetailBox .value {
+  text-align: right;
+  font-weight: 700;
+  font-size: 2em;
+  padding-left: 1em;
+}
+
+div.weatherDetailBox .value p{
+  margin-bottom: 0px;
+}
+
+div.weatherDetailBox .value span.super {
+  font-size: 0.3em;
+  vertical-align: super;
+}
+
+
+/* Extra large height devices */
+@media (min-height: 1000px) {
+  .ocean{
+    top: -20%;
+  }
+ }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.99px) {
+  div#weatherDetails {
+    width: 100%;
+  }
+  div.weatherDetailBox .boxTitle {
+    padding-left: 0px;
+    padding-right: 0.2em;
+    font-size: 1em;
+  }
+  div.weatherDetailBox .value {
+    padding-left: 0px;
+    padding-right: 0.3em;
+    font-size: 1em;
+  }
+  div.weatherDetailBox i {
+    min-width: 0;
+    font-size: 2em;
+  }
+ }
+
+/* Small devices (portrait mode) */
+@media  (max-width: 320px) {
+  div.weatherDetailBox div.boxTitle, div.weatherDetailBox div.value{
+    font-size: 1em;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.99px) {
+  div#weatherDetails {
+    width: 100%;
+  }
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.99px) {
+  #weatherDetails div.weatherDetailBox {
+    padding-left: 0px;
+  }
+  div.weatherDetailBox .boxTitle {
+    padding-left: 0px;
+    padding-right: 1em;
+  }
+  div.weatherDetailBox .value {
+    padding-left: 0px;
+    padding-right: 0.3em;
+  }
+ }
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.99px) {
+
+}
+
+/* Extra large devices (large desktops)*/
+@media (min-width: 1200px) {
+
+}

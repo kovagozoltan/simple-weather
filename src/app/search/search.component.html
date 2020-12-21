@@ -1,0 +1,11 @@
+<div>
+  <form id="search-form" class="mx-auto p-3" (submit)="searchLocation(itemForm)" #itemForm="ngForm">
+    <input type="search" [(ngModel)]="locationToSearch" name="locationToSearch" #title="ngModel" autocomplete="off"
+      (keyup.enter)="$event.target.blur()">
+  </form>
+  <div id="currentLocation">
+    <h2>{{ currentLocation }}</h2>
+    <p>{{ currentCondition }}</p>
+    <h1 *ngIf='currentTemp'>{{ currentTemp }}<span>°C</span></h1>
+  </div>
+</div>

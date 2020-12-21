@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "can-i-ride": {
+    "simple-weather": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/can-i-ride",
+            "outputPath": "dist/simple-weather",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "can-i-ride:build"
+            "browserTarget": "simple-weather:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "can-i-ride:build:production"
+              "browserTarget": "simple-weather:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "can-i-ride:build"
+            "browserTarget": "simple-weather:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "can-i-ride:serve"
+            "devServerTarget": "simple-weather:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "can-i-ride:serve:production"
+              "devServerTarget": "simple-weather:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "can-i-ride"
+  "defaultProject": "simple-weather"
 }
